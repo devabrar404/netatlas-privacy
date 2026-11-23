@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Net Atlas – Privacy Policy</title>
+<style>
+  :root { --bg: #eef2f6; --surface: #ffffff; --text: #141c2b; --muted: #5a6477; --accent: #00788a; --line: #d6dee8; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0b111d; --surface: #131b2b; --text: #e8eef6; --muted: #8a95aa; --accent: #3fd6e6; --line: #233049; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 2rem; margin: 0 0 4px; letter-spacing: -0.02em; }
+  h2 { font-size: 1.15rem; margin: 32px 0 8px; }
+  .meta { color: var(--muted); margin: 0 0 28px; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 4px 20px; }
+  a { color: var(--accent); }
+  ul { padding-left: 20px; }
+  li { margin: 4px 0; }
+  .accent { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1><span class="accent">Net</span> Atlas Privacy Policy</h1>
+  <p class="meta">Effective date: 23 November 2026</p>
+
+  <div class="card">
+    <p>Net Atlas ("the app") is published by <strong>Code Compiler</strong>. This policy explains what
+    information the app handles, why, and the choices you have. In short: <strong>no accounts, no ads, no
+    analytics, no crash reporting, no location permission, and your history and monitor list never leave your
+    phone.</strong></p>
+  </div>
+
+  <h2>1. Information the app sends</h2>
+  <p>Net Atlas is a set of network tools. Each tool only sends what it needs to answer the check you start:</p>
+  <ul>
+    <li><strong>DNS Lookup and DNS Propagation:</strong> the domain or IP you type and the record type are sent
+    over DNS-over-HTTPS to the public resolver you choose, <strong>Google Public DNS</strong> (dns.google) or
+    <strong>Cloudflare DNS</strong> (cloudflare-dns.com). DNS Propagation also sends the same query to
+    <strong>AdGuard DNS</strong>, <strong>NextDNS</strong> and <strong>Alibaba AliDNS</strong> to compare the
+    answers.</li>
+    <li><strong>WHOIS / Domain info:</strong> the domain or IP you type is sent to <strong>rdap.org</strong>,
+    which forwards the request to the registry or regional internet registry responsible for it.</li>
+    <li><strong>My IP:</strong> when you open My IP, the app sends a request to <strong>ip-api.com</strong>. Like
+    every internet request, it carries your IP address. ip-api.com returns your public IP, internet provider,
+    ASN and an approximate (city-level) location. The free ip-api.com service is reached over a standard (HTTP)
+    connection, which is <strong>not encrypted</strong>. ip-api.com's handling of requests is described in its
+    own policy: <a href="https://ip-api.com/docs/legal" rel="noopener">ip-api.com/docs/legal</a>.</li>
+    <li><strong>SSL Certificate Checker, HTTP Headers &amp; Redirects, Port Checker, TCP Ping and Uptime
+    Monitor:</strong> the app connects directly to the host, URL or port you choose. That host sees your device's
+    IP address, as with any connection your browser makes.</li>
+  </ul>
+  <p>These services receive the request only to return the result to you. The app uses the answers only to
+  display them on your screen. Each service handles requests under its own privacy policy.</p>
+
+  <h2>2. Information stored on your device</h2>
+  <ul>
+    <li><strong>History:</strong> your past lookups (and any hosts you pin) are saved only on your phone so you
+    can view or re-run them. You can switch History off or clear it in Settings.</li>
+    <li><strong>Uptime Monitor list:</strong> the websites you add (up to 10) and their last status are saved
+    only on your phone. The app checks them in the background about every 15 minutes and shows a notification
+    if a site goes down, comes back up, or its SSL certificate expires within 14 days. You can remove any
+    monitor at any time.</li>
+    <li><strong>Settings:</strong> your theme, chosen DNS resolver and History preference are saved on your
+    phone.</li>
+  </ul>
+  <p>Uninstalling the app removes all of this data.</p>
+
+  <h2>3. Permissions</h2>
+  <ul>
+    <li><strong>Internet and network state:</strong> to run the checks and to tell you when you are offline.</li>
+    <li><strong>Notifications</strong> (Android 13 and newer): asked only when you add your first Uptime monitor,
+    and used only to alert you when a website you added goes down or its SSL certificate is about to
+    expire.</li>
+    <li><strong>Run at startup and keep awake:</strong> added by Android's WorkManager so your monitors keep
+    working after the phone restarts.</li>
+  </ul>
+
+  <h2>4. What the app does not do</h2>
+  <ul>
+    <li>It does not ask for or use location permission or GPS.</li>
+    <li>It does not require an account and does not collect your name, email, contacts, photos or files.</li>
+    <li>It contains no advertising, analytics, crash reporting or tracking tools.</li>
+    <li>It does not sell or rent any information.</li>
+    <li>We (the developer) do not run any server that receives your data.</li>
+  </ul>
+
+  <h2>5. Sharing</h2>
+  <p>Information is only sent to the services and hosts described above, to provide the feature you use. When you
+  use the app's Share or Export button, the text goes to the app you pick, under your control.</p>
+
+  <h2>6. Children</h2>
+  <p>The app is not directed at children under 13 and does not knowingly collect personal information from
+  them.</p>
+
+  <h2>7. Accuracy and responsible use</h2>
+  <p>IP location shows where a network is registered, usually the city or region of an internet provider. It is
+  not a street address and must not be used to identify or locate a person. Port Checker and TCP Ping check
+  only the host and ports you enter; please use them only on systems you own or are allowed to test.</p>
+
+  <h2>8. Changes to this policy</h2>
+  <p>If the app's data practices change, this page will be updated and the effective date above will change.</p>
+
+  <h2>9. Contact</h2>
+  <p>Questions about this policy: <a href="mailto:codecompilerp@gmail.com">codecompilerp@gmail.com</a></p>
+</main>
+</body>
+</html>
